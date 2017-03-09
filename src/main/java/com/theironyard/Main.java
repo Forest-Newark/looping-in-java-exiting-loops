@@ -34,8 +34,19 @@ public class Main {
             6 6 6 6 6 6
          */
         // todo: output the expected text
-
+        int height = 6;
+        for (int rows = 1; rows <= height; rows++) {
+            if (rows == 3) {
+                continue;
+            }
+            for (int col = 1; col <= rows; col++) {
+                System.out.print(rows + " ");
+                if (rows == 5 && col == 2) {
+                    break;
+                }
+            }
+            System.out.println();
+        }
 
     }
-
 }
